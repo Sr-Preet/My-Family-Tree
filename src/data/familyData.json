@@ -1,184 +1,506 @@
 {
-  "id": "root",
+  "id": "1",
   "name": "Isher/Rulda",
   "status": "deceased",
-  "gender": "male",
   "children": [
     {
-      "id": "saina",
+      "id": "1-1",
       "name": "Saina",
       "status": "deceased",
-      "gender": "female",
       "children": [
         {
-          "id": "daani",
+          "id": "1-1-1",
           "name": "Daani",
-          "status": "deceased",
-          "gender": "male",
-          "children": [
-            {
-              "id": "shinno",
-              "name": "Shinno",
-              "status": "alive",
-              "gender": "male",
-              "children": []
-            },
-            {
-              "id": "kartaara",
-              "name": "Kartaara",
-              "status": "alive",
-              "gender": "male",
-              "children": []
-            },
-            {
-              "id": "jeeto",
-              "name": "Jeeto",
-              "status": "alive",
-              "gender": "female",
-              "children": []
-            },
-            {
-              "id": "preetu",
-              "name": "Preetu",
-              "status": "alive",
-              "gender": "female",
-              "children": []
-            },
-            {
-              "id": "jeetu",
-              "name": "Jeetu",
-              "status": "alive",
-              "gender": "male",
-              "children": []
-            },
-            {
-              "id": "pyaara",
-              "name": "Pyaara",
-              "status": "alive",
-              "gender": "male",
-              "children": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "santi",
-      "name": "Santi",
-      "status": "deceased",
-      "gender": "female",
-      "children": [
-        {
-          "id": "milkhi",
-          "name": "Milkhi",
-          "status": "alive",
-          "gender": "male",
-          "children": []
+          "status": "deceased"
         },
         {
-          "id": "beero",
-          "name": "Beero",
-          "status": "deceased",
-          "gender": "female",
-          "children": []
+          "id": "1-1-2",
+          "name": "Shinno",
+          "status": "living"
+        },
+        {
+          "id": "1-1-3",
+          "name": "Kartaara",
+          "status": "living"
+        },
+        {
+          "id": "1-1-4",
+          "name": "Jeeto",
+          "status": "living"
+        },
+        {
+          "id": "1-1-5",
+          "name": "Preetu",
+          "status": "living"
+        },
+        {
+          "id": "1-1-6",
+          "name": "Jeetu",
+          "status": "living"
+        },
+        {
+          "id": "1-1-7",
+          "name": "Pyaara",
+          "status": "living"
         }
       ]
     },
     {
-      "id": "bujha",
+      "id": "1-2",
+      "name": "Santi",
+      "status": "deceased",
+      "children": [
+        {
+          "id": "1-2-1",
+          "name": "Milkhi",
+          "status": "living"
+        },
+        {
+          "id": "1-2-2",
+          "name": "Beero",
+          "status": "deceased"
+        }
+      ]
+    },
+    {
+      "id": "1-3",
       "name": "Bujha/Bachni",
       "status": "deceased",
-      "gender": "male",
       "children": [
         {
-          "id": "gurmel",
+          "id": "1-3-1",
           "name": "Gurmel",
-          "status": "alive",
-          "gender": "male",
+          "status": "living",
           "children": [
             {
-              "id": "mindo",
+              "id": "1-3-1-1",
               "name": "Mindo",
-              "status": "alive",
-              "gender": "male",
-              "children": []
+              "status": "living"
             },
             {
-              "id": "telu",
+              "id": "1-3-1-2",
               "name": "Telu",
-              "status": "alive",
-              "gender": "female",
-              "children": []
+              "status": "living"
+            }
+          ]
+        },
+        {
+          "id": "1-3-2",
+          "name": "Bhajan Dass",
+          "status": "deceased",
+          "children": [
+            {
+              "id": "1-3-2-1",
+              "name": "Madan/Surjeet",
+              "status": "living",
+              "children": [
+                {
+                  "id": "1-3-2-1-1",
+                  "name": "Jyoti",
+                  "status": "living",
+                  "children": [
+                    {
+                      "id": "1-3-2-1-1-1",
+                      "name": "Abnoor",
+                      "status": "living"
+                    }
+                  ]
+                },
+                {
+                  "id": "1-3-2-1-2",
+                  "name": "Ajay",
+                  "status": "living"
+                },
+                {
+                  "id": "1-3-2-1-3",
+                  "name": "Neeraj",
+                  "status": "living"
+                }
+              ]
+            },
+            {
+              "id": "1-3-2-2",
+              "name": "Susheel",
+              "status": "living",
+              "children": [
+                {
+                  "id": "1-3-2-2-1",
+                  "name": "Gurnoor",
+                  "status": "living"
+                },
+                {
+                  "id": "1-3-2-2-2",
+                  "name": "Sukhman",
+                  "status": "living"
+                }
+              ]
+            },
+            {
+              "id": "1-3-2-3",
+              "name": "Rani",
+              "status": "living",
+              "children": [
+                {
+                  "id": "1-3-2-3-1",
+                  "name": "Goldy",
+                  "status": "living"
+                },
+                {
+                  "id": "1-3-2-3-2",
+                  "name": "Gaurav",
+                  "status": "living"
+                },
+                {
+                  "id": "1-3-2-3-3",
+                  "name": "Jassi",
+                  "status": "living"
+                }
+              ]
+            },
+            {
+              "id": "1-3-2-4",
+              "name": "Sekhon",
+              "status": "living",
+              "children": [
+                {
+                  "id": "1-3-2-4-1",
+                  "name": "Janti",
+                  "status": "living"
+                },
+                {
+                  "id": "1-3-2-4-2",
+                  "name": "Meena",
+                  "status": "living"
+                },
+                {
+                  "id": "1-3-2-4-3",
+                  "name": "Neeta",
+                  "status": "living"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1-3-3",
+          "name": "Gyaan",
+          "status": "deceased",
+          "children": [
+            {
+              "id": "1-3-3-1",
+              "name": "Surjit",
+              "status": "living"
+            },
+            {
+              "id": "1-3-3-2",
+              "name": "Kesha",
+              "status": "living"
+            },
+            {
+              "id": "1-3-3-3",
+              "name": "Kaala",
+              "status": "living"
+            },
+            {
+              "id": "1-3-3-4",
+              "name": "Seeso",
+              "status": "living"
+            },
+            {
+              "id": "1-3-3-5",
+              "name": "Baksho",
+              "status": "living"
+            },
+            {
+              "id": "1-3-3-6",
+              "name": "Raano",
+              "status": "living"
+            },
+            {
+              "id": "1-3-3-7",
+              "name": "Bholi",
+              "status": "living"
+            },
+            {
+              "id": "1-3-3-8",
+              "name": "Kinde",
+              "status": "living"
+            }
+          ]
+        },
+        {
+          "id": "1-3-4",
+          "name": "Seetal",
+          "status": "living",
+          "children": [
+            {
+              "id": "1-3-4-1",
+              "name": "Navkant",
+              "status": "living",
+              "children": [
+                {
+                  "id": "1-3-4-1-1",
+                  "name": "Robin",
+                  "status": "living"
+                },
+                {
+                  "id": "1-3-4-1-2",
+                  "name": "Surbhi",
+                  "status": "living"
+                },
+                {
+                  "id": "1-3-4-1-3",
+                  "name": "Jot",
+                  "status": "living"
+                }
+              ]
+            },
+            {
+              "id": "1-3-4-2",
+              "name": "Navneet",
+              "status": "living"
+            },
+            {
+              "id": "1-3-4-3",
+              "name": "Baby",
+              "status": "living"
+            },
+            {
+              "id": "1-3-4-4",
+              "name": "Shinde",
+              "status": "living"
+            }
+          ]
+        },
+        {
+          "id": "1-3-5",
+          "name": "Sucha",
+          "status": "living",
+          "children": [
+            {
+              "id": "1-3-5-1",
+              "name": "Saroj/Mohan",
+              "status": "living",
+              "children": [
+                {
+                  "id": "1-3-5-1-1",
+                  "name": "Laddi/Mona",
+                  "status": "living",
+                  "children": [
+                    {
+                      "id": "1-3-5-1-1-1",
+                      "name": "Azeen",
+                      "status": "living"
+                    }
+                  ]
+                },
+                {
+                  "id": "1-3-5-1-2",
+                  "name": "Goldy/Heena",
+                  "status": "living"
+                }
+              ]
+            },
+            {
+              "id": "1-3-5-2",
+              "name": "Mehtab/Ranjit",
+              "status": "living",
+              "children": [
+                {
+                  "id": "1-3-5-2-1",
+                  "name": "Sarpreet",
+                  "status": "living"
+                },
+                {
+                  "id": "1-3-5-2-2",
+                  "name": "Jaskaran",
+                  "status": "living"
+                }
+              ]
+            },
+            {
+              "id": "1-3-5-3",
+              "name": "Jasvir/Davinder",
+              "status": "living",
+              "children": [
+                {
+                  "id": "1-3-5-3-1",
+                  "name": "Salakhan",
+                  "status": "deceased"
+                },
+                {
+                  "id": "1-3-5-3-2",
+                  "name": "Pardeep",
+                  "status": "living"
+                },
+                {
+                  "id": "1-3-5-3-3",
+                  "name": "Anuradha",
+                  "status": "living"
+                }
+              ]
+            },
+            {
+              "id": "1-3-5-4",
+              "name": "Saabhi",
+              "status": "deceased"
+            }
+          ]
+        },
+        {
+          "id": "1-3-6",
+          "name": "Kehru/Gyaano",
+          "status": "deceased",
+          "children": [
+            {
+              "id": "1-3-6-1",
+              "name": "Krishna",
+              "status": "living"
+            },
+            {
+              "id": "1-3-6-2",
+              "name": "Somnath",
+              "status": "living"
+            },
+            {
+              "id": "1-3-6-3",
+              "name": "Omnath",
+              "status": "living"
+            },
+            {
+              "id": "1-3-6-4",
+              "name": "Ghughan",
+              "status": "living"
+            }
+          ]
+        },
+        {
+          "id": "1-3-7",
+          "name": "Tulsan",
+          "status": "living",
+          "children": [
+            {
+              "id": "1-3-7-1",
+              "name": "Kirna",
+              "status": "living"
+            },
+            {
+              "id": "1-3-7-2",
+              "name": "Susheel",
+              "status": "living"
+            },
+            {
+              "id": "1-3-7-3",
+              "name": "Vicky",
+              "status": "living"
+            },
+            {
+              "id": "1-3-7-4",
+              "name": "Rubi",
+              "status": "living"
             }
           ]
         }
       ]
     },
     {
-      "id": "bhajan",
-      "name": "Bhajan Dass",
+      "id": "1-4",
+      "name": "Meehun",
       "status": "deceased",
-      "gender": "male",
       "children": [
         {
-          "id": "madan",
-          "name": "Madan/Surjeet",
-          "status": "alive",
-          "gender": "male",
-          "children": [
-            {
-              "id": "jyoti",
-              "name": "Jyoti",
-              "status": "alive",
-              "gender": "female",
-              "children": [
-                {
-                  "id": "abnoor",
-                  "name": "Abnoor",
-                  "status": "alive",
-                  "gender": "male",
-                  "children": [
-                    {
-                      "id": "ajay",
-                      "name": "Ajay",
-                      "status": "alive",
-                      "gender": "male",
-                      "children": []
-                    },
-                    {
-                      "id": "neeraj",
-                      "name": "Neeraj",
-                      "status": "alive",
-                      "gender": "male",
-                      "children": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "susheel",
-              "name": "Susheel",
-              "status": "alive",
-              "gender": "male",
-              "children": [
-                {
-                  "id": "gurnoor",
-                  "name": "Gurnoor",
-                  "status": "alive",
-                  "gender": "female",
-                  "children": []
-                },
-                {
-                  "id": "sukhman",
-                  "name": "Sukhman",
-                  "status": "alive",
-                  "gender": "male",
-                  "children": []
-                }
-              ]
-            }
-          ]
+          "id": "1-4-1",
+          "name": "Mohna",
+          "status": "living"
+        },
+        {
+          "id": "1-4-2",
+          "name": "Pyaara",
+          "status": "living"
+        },
+        {
+          "id": "1-4-3",
+          "name": "Shinda",
+          "status": "living"
+        },
+        {
+          "id": "1-4-4",
+          "name": "Nimma",
+          "status": "living"
+        },
+        {
+          "id": "1-4-5",
+          "name": "Guhon",
+          "status": "living"
+        }
+      ]
+    },
+    {
+      "id": "1-5",
+      "name": "Mandu",
+      "status": "deceased",
+      "children": [
+        {
+          "id": "1-5-1",
+          "name": "Gurmeet",
+          "status": "deceased"
+        },
+        {
+          "id": "1-5-2",
+          "name": "Pooran",
+          "status": "deceased"
+        },
+        {
+          "id": "1-5-3",
+          "name": "Charno",
+          "status": "deceased"
+        },
+        {
+          "id": "1-5-4",
+          "name": "Hari Krishan",
+          "status": "living"
+        },
+        {
+          "id": "1-5-5",
+          "name": "Gurdev",
+          "status": "deceased"
+        },
+        {
+          "id": "1-5-6",
+          "name": "Gano",
+          "status": "living"
+        }
+      ]
+    },
+    {
+      "id": "1-6",
+      "name": "Sandhi",
+      "status": "deceased",
+      "children": [
+        {
+          "id": "1-6-1",
+          "name": "Prakash",
+          "status": "living"
+        },
+        {
+          "id": "1-6-2",
+          "name": "Meeto",
+          "status": "living"
+        },
+        {
+          "id": "1-6-3",
+          "name": "Shinda",
+          "status": "living"
+        },
+        {
+          "id": "1-6-4",
+          "name": "Gyaano",
+          "status": "living"
+        },
+        {
+          "id": "1-6-5",
+          "name": "Harbilas",
+          "status": "living"
         }
       ]
     }
