@@ -19,7 +19,7 @@ function App() {
 
   const findPersonById = (data, id) => {
     if (data.id === id) return data;
-    
+
     if (data.children) {
       for (let child of data.children) {
         const found = findPersonById(child, id);
@@ -31,7 +31,7 @@ function App() {
 
   const findParentById = (data, id, parent = null) => {
     if (data.id === id) return parent;
-    
+
     if (data.children) {
       for (let child of data.children) {
         if (child.id === id) return data;
@@ -44,8 +44,11 @@ function App() {
 
   const updateFamilyData = (newData) => {
     setFamilyData({ ...newData });
-    // In a real app, you would save this to a backend or localStorage
-    console.log('Updated family data:', newData);
+    // Now write the updated data to the file
+    default_api.write_file({
+      path: 'src/data/familyData.json',
+      content: JSON.stringify(newData, null, 2),
+    });
   };
 
   const handleAddPerson = (parentId) => {
@@ -91,8 +94,11 @@ function App() {
 
     const updatedData = { ...familyData };
     const parent = findPersonById(updatedData, parentPerson.id);
-    
+
     if (formData.relationship === 'child') {
+      if (!parent.children) {
+        parent.children = [];
+      }
       parent.children.push(newPerson);
     }
 
@@ -102,7 +108,7 @@ function App() {
   const editPerson = (formData) => {
     const updatedData = { ...familyData };
     const person = findPersonById(updatedData, selectedPerson.id);
-    
+
     person.name = formData.name;
     person.gender = formData.gender;
     person.status = formData.status;
@@ -118,13 +124,16 @@ function App() {
 
     const updatedData = { ...familyData };
     const parent = findParentById(updatedData, selectedPerson.id);
-    
+
     if (parent) {
       parent.children = parent.children.filter(child => child.id !== selectedPerson.id);
     }
 
     updateFamilyData(updatedData);
   };
+
+
+
 
   if (!familyData) {
     return <div className="loading">Loading family tree...</div>;
@@ -136,7 +145,7 @@ function App() {
         <h1>Family Tree</h1>
         <p>Hover over family members to see options</p>
       </header>
-      
+
       <div className="family-tree-container">
         <FamilyTree
           data={familyData}

@@ -75,3 +75,20 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.5);
 }
+
+.node circle {
+  fill: steelblue;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+.node text {
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}

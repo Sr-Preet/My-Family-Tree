@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import { UserPlus, Edit, Trash2 } from 'lucide-react';
 import './PersonNode.css';
 
-const PersonNode = ({ 
-  person, 
-  onAddPerson, 
-  onEditPerson, 
-  onDeletePerson
+const PersonNode = ({
+  person,
+  onAddPerson,
+  onEditPerson,
+  onDeletePerson,
+  isCollapsed,
+  onToggleCollapse
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -15,10 +17,11 @@ const PersonNode = ({
   };
 
   return (
-    <div 
+    <div
       className={`person-node ${person.gender} ${isHovered ? 'hovered' : ''}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={person.children && person.children.length > 0 ? onToggleCollapse : undefined}
     >
       <div className="person-info">
         <div className="person-avatar">
@@ -40,7 +43,7 @@ const PersonNode = ({
           >
             <Edit size={16} />
           </button>
-          
+
           <button
             className="action-btn delete"
             onClick={() => onDeletePerson(person.id)}
@@ -49,13 +52,16 @@ const PersonNode = ({
             <Trash2 size={16} />
           </button>
 
-          <button
-            className="action-btn add-child"
-            onClick={() => onAddPerson(person.id)}
-            title="Add Child"
-          >
-            <UserPlus size={16} />
-          </button>
+          {/* Only show Add Child for living individuals */}
+          {person.status !== 'deceased' && (
+            <button
+              className="action-btn add-child"
+              onClick={() => onAddPerson(person.id)}
+              title="Add Child"
+            >
+              <UserPlus size={16} />
+            </button>
+          )}
         </div>
       )}
     </div>

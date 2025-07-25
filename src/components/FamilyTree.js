@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PersonNode from './PersonNode';
 import './FamilyTree.css';
 
 const FamilyTree = ({ data, onAddPerson, onEditPerson, onDeletePerson, level = 0 }) => {
+  const [isCollapsed, setIsCollapsed] = useState(level > 0);
+
   if (!data) return null;
+
+  const toggleCollapse = () => {
+    setIsCollapsed(!isCollapsed);
+  };
 
   return (
     <div className={`family-tree level-${level}`}>
@@ -14,15 +20,17 @@ const FamilyTree = ({ data, onAddPerson, onEditPerson, onDeletePerson, level = 0
             onAddPerson={onAddPerson}
             onEditPerson={onEditPerson}
             onDeletePerson={onDeletePerson}
+            isCollapsed={isCollapsed}
+            onToggleCollapse={toggleCollapse}
           />
         </div>
-        
-        {data.children && data.children.length > 0 && (
+
+        {data.children && data.children.length > 0 && !isCollapsed && (
           <div className="connection-line"></div>
         )}
       </div>
 
-      {data.children && data.children.length > 0 && (
+      {data.children && data.children.length > 0 && !isCollapsed && (
         <div className="children">
           {data.children.map((child, index) => (
             <div key={child.id} className="child-branch">
