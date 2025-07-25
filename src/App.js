@@ -19,7 +19,6 @@ function App() {
 
   const findPersonById = (data, id) => {
     if (data.id === id) return data;
-    if (data.spouse && data.spouse.id === id) return data.spouse;
     
     if (data.children) {
       for (let child of data.children) {
@@ -32,7 +31,6 @@ function App() {
 
   const findParentById = (data, id, parent = null) => {
     if (data.id === id) return parent;
-    if (data.spouse && data.spouse.id === id) return parent;
     
     if (data.children) {
       for (let child of data.children) {
@@ -50,7 +48,7 @@ function App() {
     console.log('Updated family data:', newData);
   };
 
-  const handleAddPerson = (parentId, relationship) => {
+  const handleAddPerson = (parentId) => {
     const parent = findPersonById(familyData, parentId);
     setParentPerson(parent);
     setSelectedPerson(null);
@@ -86,9 +84,8 @@ function App() {
     const newPerson = {
       id: `person_${Date.now()}`,
       name: formData.name,
-      birth_year: parseInt(formData.birth_year),
-      death_year: formData.death_year ? parseInt(formData.death_year) : null,
       gender: formData.gender,
+      status: formData.status,
       children: []
     };
 
@@ -97,8 +94,6 @@ function App() {
     
     if (formData.relationship === 'child') {
       parent.children.push(newPerson);
-    } else if (formData.relationship === 'spouse') {
-      parent.spouse = newPerson;
     }
 
     updateFamilyData(updatedData);
@@ -109,9 +104,8 @@ function App() {
     const person = findPersonById(updatedData, selectedPerson.id);
     
     person.name = formData.name;
-    person.birth_year = parseInt(formData.birth_year);
-    person.death_year = formData.death_year ? parseInt(formData.death_year) : null;
     person.gender = formData.gender;
+    person.status = formData.status;
 
     updateFamilyData(updatedData);
   };
@@ -126,11 +120,7 @@ function App() {
     const parent = findParentById(updatedData, selectedPerson.id);
     
     if (parent) {
-      if (parent.spouse && parent.spouse.id === selectedPerson.id) {
-        delete parent.spouse;
-      } else {
-        parent.children = parent.children.filter(child => child.id !== selectedPerson.id);
-      }
+      parent.children = parent.children.filter(child => child.id !== selectedPerson.id);
     }
 
     updateFamilyData(updatedData);

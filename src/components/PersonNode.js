@@ -1,28 +1,17 @@
 import React, { useState } from 'react';
-import { UserPlus, Edit, Trash2, Heart } from 'lucide-react';
+import { UserPlus, Edit, Trash2 } from 'lucide-react';
 import './PersonNode.css';
 
 const PersonNode = ({ 
   person, 
   onAddPerson, 
   onEditPerson, 
-  onDeletePerson, 
-  canAddSpouse, 
-  canAddChild 
+  onDeletePerson
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const getAge = () => {
-    const currentYear = new Date().getFullYear();
-    const endYear = person.death_year || currentYear;
-    return endYear - person.birth_year;
-  };
-
-  const getDisplayYears = () => {
-    if (person.death_year) {
-      return `${person.birth_year} - ${person.death_year}`;
-    }
-    return `${person.birth_year} - Present`;
+  const getStatusDisplay = () => {
+    return person.status === 'deceased' ? '(D)' : '';
   };
 
   return (
@@ -36,9 +25,9 @@ const PersonNode = ({
           {person.name.split(' ').map(n => n[0]).join('')}
         </div>
         <div className="person-details">
-          <h3 className="person-name">{person.name}</h3>
-          <p className="person-years">{getDisplayYears()}</p>
-          <p className="person-age">Age: {getAge()}</p>
+          <h3 className="person-name">{person.name} {getStatusDisplay()}</h3>
+          <p className="person-gender">{person.gender}</p>
+          <p className="person-status">{person.status}</p>
         </div>
       </div>
 
@@ -60,25 +49,13 @@ const PersonNode = ({
             <Trash2 size={16} />
           </button>
 
-          {canAddChild && (
-            <button
-              className="action-btn add-child"
-              onClick={() => onAddPerson(person.id, 'child')}
-              title="Add Child"
-            >
-              <UserPlus size={16} />
-            </button>
-          )}
-
-          {canAddSpouse && (
-            <button
-              className="action-btn add-spouse"
-              onClick={() => onAddPerson(person.id, 'spouse')}
-              title="Add Spouse"
-            >
-              <Heart size={16} />
-            </button>
-          )}
+          <button
+            className="action-btn add-child"
+            onClick={() => onAddPerson(person.id)}
+            title="Add Child"
+          >
+            <UserPlus size={16} />
+          </button>
         </div>
       )}
     </div>

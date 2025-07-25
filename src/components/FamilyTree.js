@@ -8,25 +8,13 @@ const FamilyTree = ({ data, onAddPerson, onEditPerson, onDeletePerson, level = 0
   return (
     <div className={`family-tree level-${level}`}>
       <div className="generation">
-        <div className="couple">
+        <div className="person-container">
           <PersonNode
             person={data}
             onAddPerson={onAddPerson}
             onEditPerson={onEditPerson}
             onDeletePerson={onDeletePerson}
-            canAddSpouse={!data.spouse}
-            canAddChild={true}
           />
-          {data.spouse && (
-            <PersonNode
-              person={data.spouse}
-              onAddPerson={onAddPerson}
-              onEditPerson={onEditPerson}
-              onDeletePerson={onDeletePerson}
-              canAddSpouse={false}
-              canAddChild={false}
-            />
-          )}
         </div>
         
         {data.children && data.children.length > 0 && (

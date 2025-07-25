@@ -1,70 +1,184 @@
 {
   "id": "root",
-  "name": "John Smith",
-  "birth_year": 1950,
-  "death_year": null,
+  "name": "Isher/Rulda",
+  "status": "deceased",
   "gender": "male",
-  "spouse": {
-    "id": "spouse_root",
-    "name": "Mary Smith",
-    "birth_year": 1952,
-    "death_year": null,
-    "gender": "female"
-  },
   "children": [
     {
-      "id": "child_1",
-      "name": "Michael Smith",
-      "birth_year": 1975,
-      "death_year": null,
-      "gender": "male",
-      "spouse": {
-        "id": "spouse_child_1",
-        "name": "Sarah Smith",
-        "birth_year": 1977,
-        "death_year": null,
-        "gender": "female"
-      },
+      "id": "saina",
+      "name": "Saina",
+      "status": "deceased",
+      "gender": "female",
       "children": [
         {
-          "id": "grandchild_1",
-          "name": "Emma Smith",
-          "birth_year": 2005,
-          "death_year": null,
-          "gender": "female",
+          "id": "daani",
+          "name": "Daani",
+          "status": "deceased",
+          "gender": "male",
+          "children": [
+            {
+              "id": "shinno",
+              "name": "Shinno",
+              "status": "alive",
+              "gender": "male",
+              "children": []
+            },
+            {
+              "id": "kartaara",
+              "name": "Kartaara",
+              "status": "alive",
+              "gender": "male",
+              "children": []
+            },
+            {
+              "id": "jeeto",
+              "name": "Jeeto",
+              "status": "alive",
+              "gender": "female",
+              "children": []
+            },
+            {
+              "id": "preetu",
+              "name": "Preetu",
+              "status": "alive",
+              "gender": "female",
+              "children": []
+            },
+            {
+              "id": "jeetu",
+              "name": "Jeetu",
+              "status": "alive",
+              "gender": "male",
+              "children": []
+            },
+            {
+              "id": "pyaara",
+              "name": "Pyaara",
+              "status": "alive",
+              "gender": "male",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "santi",
+      "name": "Santi",
+      "status": "deceased",
+      "gender": "female",
+      "children": [
+        {
+          "id": "milkhi",
+          "name": "Milkhi",
+          "status": "alive",
+          "gender": "male",
           "children": []
         },
         {
-          "id": "grandchild_2",
-          "name": "James Smith",
-          "birth_year": 2008,
-          "death_year": null,
-          "gender": "male",
+          "id": "beero",
+          "name": "Beero",
+          "status": "deceased",
+          "gender": "female",
           "children": []
         }
       ]
     },
     {
-      "id": "child_2",
-      "name": "Jennifer Brown",
-      "birth_year": 1978,
-      "death_year": null,
-      "gender": "female",
-      "spouse": {
-        "id": "spouse_child_2",
-        "name": "David Brown",
-        "birth_year": 1976,
-        "death_year": null,
-        "gender": "male"
-      },
+      "id": "bujha",
+      "name": "Bujha/Bachni",
+      "status": "deceased",
+      "gender": "male",
       "children": [
         {
-          "id": "grandchild_3",
-          "name": "Alex Brown",
-          "birth_year": 2010,
-          "death_year": null,
+          "id": "gurmel",
+          "name": "Gurmel",
+          "status": "alive",
           "gender": "male",
-          "children": []
+          "children": [
+            {
+              "id": "mindo",
+              "name": "Mindo",
+              "status": "alive",
+              "gender": "male",
+              "children": []
+            },
+            {
+              "id": "telu",
+              "name": "Telu",
+              "status": "alive",
+              "gender": "female",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bhajan",
+      "name": "Bhajan Dass",
+      "status": "deceased",
+      "gender": "male",
+      "children": [
+        {
+          "id": "madan",
+          "name": "Madan/Surjeet",
+          "status": "alive",
+          "gender": "male",
+          "children": [
+            {
+              "id": "jyoti",
+              "name": "Jyoti",
+              "status": "alive",
+              "gender": "female",
+              "children": [
+                {
+                  "id": "abnoor",
+                  "name": "Abnoor",
+                  "status": "alive",
+                  "gender": "male",
+                  "children": [
+                    {
+                      "id": "ajay",
+                      "name": "Ajay",
+                      "status": "alive",
+                      "gender": "male",
+                      "children": []
+                    },
+                    {
+                      "id": "neeraj",
+                      "name": "Neeraj",
+                      "status": "alive",
+                      "gender": "male",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "susheel",
+              "name": "Susheel",
+              "status": "alive",
+              "gender": "male",
+              "children": [
+                {
+                  "id": "gurnoor",
+                  "name": "Gurnoor",
+                  "status": "alive",
+                  "gender": "female",
+                  "children": []
+                },
+                {
+                  "id": "sukhman",
+                  "name": "Sukhman",
+                  "status": "alive",
+                  "gender": "male",
+                  "children": []
+                }
+              ]
+            }
+          ]
         }
       ]
     }

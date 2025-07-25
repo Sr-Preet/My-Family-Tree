@@ -1,0 +1,168 @@
+.person-node {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: 0.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  min-width: 200px;
+  max-width: 250px;
+  backdrop-filter: blur(10px);
+  border: 2px solid transparent;
+}
+
+.person-node:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.person-node.male {
+  border-color: #3498db;
+  background: linear-gradient(135deg, rgba(52, 152, 219, 0.1) 0%, rgba(255, 255, 255, 0.95) 100%);
+}
+
+.person-node.female {
+  border-color: #e91e63;
+  background: linear-gradient(135deg, rgba(233, 30, 99, 0.1) 0%, rgba(255, 255, 255, 0.95) 100%);
+}
+
+.person-node.other {
+  border-color: #9b59b6;
+  background: linear-gradient(135deg, rgba(155, 89, 182, 0.1) 0%, rgba(255, 255, 255, 0.95) 100%);
+}
+
+.person-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.person-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.person-details {
+  flex: 1;
+}
+
+.person-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.3rem;
+  line-height: 1.3;
+}
+
+.person-gender {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  text-transform: capitalize;
+  margin-bottom: 0.2rem;
+}
+
+.person-status {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  text-transform: capitalize;
+}
+
+.person-actions {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  display: flex;
+  gap: 0.5rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.person-node.hovered .person-actions {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.action-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.action-btn:hover {
+  transform: scale(1.1);
+}
+
+.action-btn.edit {
+  background: #f39c12;
+  color: white;
+}
+
+.action-btn.edit:hover {
+  background: #e67e22;
+}
+
+.action-btn.delete {
+  background: #e74c3c;
+  color: white;
+}
+
+.action-btn.delete:hover {
+  background: #c0392b;
+}
+
+.action-btn.add-child {
+  background: #27ae60;
+  color: white;
+}
+
+.action-btn.add-child:hover {
+  background: #229954;
+}
+
+/* Status indicator for deceased */
+.person-node .person-name:has-text("(D)") {
+  color: #7f8c8d;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .person-node {
+    min-width: 180px;
+    max-width: 200px;
+    padding: 1rem;
+  }
+  
+  .person-avatar {
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+  }
+  
+  .person-name {
+    font-size: 1rem;
+  }
+  
+  .action-btn {
+    width: 32px;
+    height: 32px;
+  }
+}
