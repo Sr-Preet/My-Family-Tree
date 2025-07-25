@@ -1,0 +1,72 @@
+{
+  "id": "root",
+  "name": "John Smith",
+  "birth_year": 1950,
+  "death_year": null,
+  "gender": "male",
+  "spouse": {
+    "id": "spouse_root",
+    "name": "Mary Smith",
+    "birth_year": 1952,
+    "death_year": null,
+    "gender": "female"
+  },
+  "children": [
+    {
+      "id": "child_1",
+      "name": "Michael Smith",
+      "birth_year": 1975,
+      "death_year": null,
+      "gender": "male",
+      "spouse": {
+        "id": "spouse_child_1",
+        "name": "Sarah Smith",
+        "birth_year": 1977,
+        "death_year": null,
+        "gender": "female"
+      },
+      "children": [
+        {
+          "id": "grandchild_1",
+          "name": "Emma Smith",
+          "birth_year": 2005,
+          "death_year": null,
+          "gender": "female",
+          "children": []
+        },
+        {
+          "id": "grandchild_2",
+          "name": "James Smith",
+          "birth_year": 2008,
+          "death_year": null,
+          "gender": "male",
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "child_2",
+      "name": "Jennifer Brown",
+      "birth_year": 1978,
+      "death_year": null,
+      "gender": "female",
+      "spouse": {
+        "id": "spouse_child_2",
+        "name": "David Brown",
+        "birth_year": 1976,
+        "death_year": null,
+        "gender": "male"
+      },
+      "children": [
+        {
+          "id": "grandchild_3",
+          "name": "Alex Brown",
+          "birth_year": 2010,
+          "death_year": null,
+          "gender": "male",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
